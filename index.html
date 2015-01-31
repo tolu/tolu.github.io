@@ -17,6 +17,13 @@
     </script>
 
     <title>Tobias Lundin</title>
+
+    <style>
+      /*fix background of code-element in x-markdown-component*/
+      code[class*="language-"] {
+        background-color:inherit;
+      }
+    </style>
   </head>
 
   <body>
@@ -43,9 +50,11 @@
           It parses markdown with web components and ES6 modules
 
           ```language-javascript
-          System.import('es6').then(function(modules){
-            // do stuff
-          })
+          // index.html, head-tag
+          System.import('app');
+
+          // app.js
+          require('github:guybedford/markdown-component@0.1.0');
           ```
 
         </x-markdown-component>
