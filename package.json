@@ -1,0 +1,8 @@
+{
+  "jspm": {
+    "name": "tolu.github.io",
+    "dependencies": {
+      "markdown-component": "github:guybedford/markdown-component@^0.1.0"
+    }
+  }
+}
