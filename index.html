@@ -54,12 +54,26 @@
 
           ### Example
 
+          Installation
+          ```
+          npm install jspm -g
+          npm install github:guybedford/markdown-component
+          ```
+
+          Configuration
           ```language-javascript
-          // index.html, head-tag
-          System.import('app');
+          // index.html
+          <!--
+          <head>
+            <script src="jspm_packages/system.js"></script>
+            <script src="config.js"></script>
+            <script>
+                System.import('app');
+            </script>
+           -->
 
           // app.js
-          require('github:guybedford/markdown-component@0.1.0');
+          require('markdown-component');
           ```
 
           ### Portfolio
